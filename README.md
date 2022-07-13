@@ -7,3 +7,17 @@ To identify the age and gender of several faces’ procedures, are followed by s
 
 # DATASET
 Here Adience dataset will be used; the dataset is [CLICK HERE](https://drive.google.com/drive/folders/1tqd1XDxB-W1X0kAVjiotCudPAKTiI3iS?usp=sharing). This dataset serves as a benchmark for face photos and is inclusive of various real-world imaging conditions like noise, lighting, pose, and appearance. The images have been collected from Flickr albums and distributed under the Creative Commons (CC) license. It has a total of 26,580 photos of 2,284 subjects in eight age ranges (as mentioned above) and is about 1GB in size. The models we will use have been trained on this dataset.
+# CNN Architecture
+The convolutional neural network for this python project has 3 convolutional layers:
+
+- Convolutional layer; 96 nodes, kernel size 7
+- Convolutional layer; 256 nodes, kernel size 5
+- Convolutional layer; 384 nodes, kernel size 3
+It has 2 fully connected layers, each with 512 nodes, and a final output layer of softmax type.
+
+To perform this project, we have done following things:
+
+- Detect faces
+- Classify into Male/Female
+- Classify into one of the 8 age ranges
+- Put the results on the image and display it
